@@ -4,6 +4,7 @@ public class Butaca {
 	private String fila;
 	private Integer numero;
 	private Sala sala;
+	private Strig modelo;
 	
 	public Butaca(String fila, Integer numero, Sala sala) {
 		super();
