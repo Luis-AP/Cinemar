@@ -1,14 +1,11 @@
 package cinemar.code;
 
-import java.sql.Date;
-
 public class Usuario {
 	private Integer id;
 	private String nombre;
 	private String apellido;
-	private String email;
-	private Date fecha_nac;
 	private Integer dni;
+	private String email;
 	
 	public Integer getId() {
 		return id;
@@ -40,11 +37,5 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Date getFecha_nac() {
-		return fecha_nac;
-	}
-	public void setFecha_nac(Date fecha_nac) {
-		this.fecha_nac = fecha_nac;
-	}
-		
+	
 }

@@ -1,31 +1,26 @@
 package cinemar.code;
 
-import java.util.ArrayList;
-
-public class Sala{
+public class Sala {
 	private Integer numero;
-	private ArrayList<String> formatos;
+	private Integer capacidad;
+	private String formato;
 	
-	public Sala(Integer numero, ArrayList<String> formatos) {
-		super();
-		this.numero = numero;
-		this.formatos = formatos;
-	}
-
 	public Integer getNumero() {
 		return numero;
 	}
-
 	public void setNumero(Integer numero) {
 		this.numero = numero;
 	}
-
-	public ArrayList<String> getFormatos() {
-		return formatos;
+	public Integer getCapacidad() {
+		return capacidad;
 	}
-
-	public void setFormatos(ArrayList<String> formatos) {
-		this.formatos = formatos;
+	public void setCapacidad(Integer capacidad) {
+		this.capacidad = capacidad;
 	}
-	
+	public String getFormato() {
+		return formato;
+	}
+	public void setFormato(String formato) {
+		this.formato = formato;
+	}	
 }

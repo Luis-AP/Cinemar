@@ -1,49 +1,36 @@
 package cinemar.code;
 
+import java.sql.Date;
+
 public class Reserva {
+	private Sesion sesion;
 	private Butaca butaca;
 	private Usuario usuario;
-	private Float precio;
-	private Integer descuento;
+	private Date f_compra;
 	
-	public Reserva(Butaca butaca, Usuario usuario, Float precio, Integer descuento) {
-		super();
-		this.butaca = butaca;
-		this.usuario = usuario;
-		this.precio = precio;
-		this.descuento = descuento;
+	public Sesion getSesion() {
+		return sesion;
 	}
-
+	public void setSesion(Sesion sesion) {
+		this.sesion = sesion;
+	}
 	public Butaca getButaca() {
 		return butaca;
 	}
-
 	public void setButaca(Butaca butaca) {
 		this.butaca = butaca;
 	}
-
 	public Usuario getUsuario() {
 		return usuario;
 	}
-
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-
-	public Float getPrecio() {
-		return precio;
+	public Date getF_compra() {
+		return f_compra;
 	}
-
-	public void setPrecio(Float precio) {
-		this.precio = precio;
-	}
-
-	public Integer getDescuento() {
-		return descuento;
-	}
-
-	public void setDescuento(Integer descuento) {
-		this.descuento = descuento;
+	public void setF_compra(Date f_compra) {
+		this.f_compra = f_compra;
 	}
 	
 }

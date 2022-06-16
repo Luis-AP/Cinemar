@@ -1,29 +1,21 @@
 package cinemar.code;
 
 public class Clasificacion {
-	private String identificador;
+	private String tipo;
 	private String descripcion;
 	
-	public Clasificacion(String identificador, String descripcion) {
-		super();
-		this.identificador = identificador;
-		this.descripcion = descripcion;
+	public String getTipo() {
+		return tipo;
 	}
-
-	public String getIdentificador() {
-		return identificador;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
-
-	public void setIdentificador(String identificador) {
-		this.identificador = identificador;
-	}
-
 	public String getDescripcion() {
 		return descripcion;
 	}
-
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
+	
 	
 }

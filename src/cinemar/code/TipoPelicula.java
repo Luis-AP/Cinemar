@@ -1,38 +1,27 @@
 package cinemar.code;
 
-public class TipoPelicula{
+public class TipoPelicula {
+	private String genero;
 	private String formato;
-	private String idioma;
-	private boolean subtitulada;
 	
-	public TipoPelicula(String formato, String idioma, boolean subtitulada) {
+	public TipoPelicula(String genero, String formato) {
 		super();
+		this.genero = genero;
 		this.formato = formato;
-		this.idioma = idioma;
-		this.subtitulada = subtitulada;
 	}
-
+	public String getGenero() {
+		return genero;
+	}
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
 	public String getFormato() {
 		return formato;
 	}
-
-	public void setFormato(String formato) {
+	public void setFormatos(String formato) {
 		this.formato = formato;
 	}
-
-	public String getIdioma() {
-		return idioma;
-	}
-
-	public void setIdioma(String idioma) {
-		this.idioma = idioma;
-	}
-
-	public boolean isSubtitulada() {
-		return subtitulada;
-	}
-
-	public void setSubtitulada(boolean subtitulada) {
-		this.subtitulada = subtitulada;
-	}
+	
+	
+	
 }

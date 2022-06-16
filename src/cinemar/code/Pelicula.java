@@ -3,26 +3,32 @@ package cinemar.code;
 import java.util.ArrayList;
 
 public class Pelicula {
+	private Integer id;
 	private String nombre;
 	private ArrayList<String> reparto;
-	private Integer duracion;
 	private String director;
-	private String genero;
-	private String sinopsis;
+	private Integer duracion;
 	private Clasificacion clasificacion;
-	private TipoPelicula tipo;
+	private TipoPelicula categoria;
 	
-	public Pelicula(String nombre, ArrayList<String> reparto, Integer duracion, String director, String genero,
-			String sinopsis, Clasificacion clasificacion, TipoPelicula tipo) {
+	public Pelicula(Integer id, String nombre, ArrayList<String> reparto, String director, Integer duracion,
+			Clasificacion clasificacion, TipoPelicula categoria) {
 		super();
+		this.id = id;
 		this.nombre = nombre;
 		this.reparto = reparto;
-		this.duracion = duracion;
 		this.director = director;
-		this.genero = genero;
-		this.sinopsis = sinopsis;
+		this.duracion = duracion;
 		this.clasificacion = clasificacion;
-		this.tipo = tipo;
+		this.categoria = categoria;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getNombre() {
@@ -41,14 +47,6 @@ public class Pelicula {
 		this.reparto = reparto;
 	}
 
-	public Integer getDuracion() {
-		return duracion;
-	}
-
-	public void setDuracion(Integer duracion) {
-		this.duracion = duracion;
-	}
-
 	public String getDirector() {
 		return director;
 	}
@@ -57,20 +55,12 @@ public class Pelicula {
 		this.director = director;
 	}
 
-	public String getGenero() {
-		return genero;
+	public Integer getDuracion() {
+		return duracion;
 	}
 
-	public void setGenero(String genero) {
-		this.genero = genero;
-	}
-
-	public String getSinopsis() {
-		return sinopsis;
-	}
-
-	public void setSinopsis(String sinopsis) {
-		this.sinopsis = sinopsis;
+	public void setDuracion(Integer duracion) {
+		this.duracion = duracion;
 	}
 
 	public Clasificacion getClasificacion() {
@@ -81,11 +71,12 @@ public class Pelicula {
 		this.clasificacion = clasificacion;
 	}
 
-	public TipoPelicula getTipo() {
-		return tipo;
+	public TipoPelicula getCategoria() {
+		return categoria;
 	}
 
-	public void setTipo(TipoPelicula tipo) {
-		this.tipo = tipo;
+	public void setCategoria(TipoPelicula categoria) {
+		this.categoria = categoria;
 	}
+	
 }
